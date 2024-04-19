@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kml{
+            border: 3px solid black;
+            /* border-left: 5px solid black; */
+            /* margin-left: 34px;
+            margin-top: 44px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <img src="./pexels-mikkel-kvist-16039120.jpg" alt=""> -->
+    <!-- <a href="https://github.com/00tatheer00/Ch-15-Layout"><img src="./workplace.jpg" alt="" width="600px"
+            height="550px"></a> -->
+
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="./mac.jpg">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="./cellphone.jpg">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="./coffeehouse2.jpg">
+    </map>
+</body>
+
+</html>
